@@ -1,0 +1,28 @@
+﻿raw rows: 50,000 -> cleaned: 20,507
+rule_check (Is_Flood == WL>=Danger): True
+train=16,405 test=4,102 prevalence=0.613
+  Accuracy: 1.0000
+  Precision: 1.0000
+  Recall: 1.0000
+  ROC-AUC: 1.0000
+confusion:
+ [[1587    0]
+ [   0 2515]]
+feature importances:
+  Gap_to_Danger_m: 0.4468
+  Gap_to_Warning_m: 0.3916
+  River Water Level Telemetry Hourly (meter): 0.0655
+  Danger_Level_m: 0.0452
+  Warning_Level_m: 0.0388
+  Water_Level_Change_1h: 0.0122
+  Rainfall_mm: 0.0000
+example flood-row probability: 1.000
+example safe-row probability:  0.000
+contributions (flood row):
+Gap_to_Danger_m                               0.243669
+Gap_to_Warning_m                              0.209631
+River Water Level Telemetry Hourly (meter)    0.041207
+Water_Level_Change_1h                         0.021810
+Danger_Level_m                               -0.009920
+Warning_Level_m                              -0.006397
+Rainfall_mm                                   0.000000
